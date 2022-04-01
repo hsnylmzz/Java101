@@ -5,17 +5,17 @@ public class KdvTutarHesaplama {
 	public static void main(String[] args) {
 		double kdvliTutar,kdvTutar,tutar,kdvOran = 0.18;
 		Scanner input = new Scanner(System.in);
-		System.out.print("Ücret Tutarýný Giriniz : ");
+		System.out.print("Ãœcret TutarÄ±nÄ± Giriniz : ");
 		tutar = input.nextDouble();
 		
 		kdvTutar = tutar*kdvOran ;
-        kdvliTutar = tutar+kdvTutar;
-        kdvOran = (tutar * 0.18);
+                kdvliTutar = tutar+kdvTutar;
+                kdvOran = (tutar * 0.18);
 
-        System.out.println("Kdv'siz Tutar :"+tutar);
-        System.out.println("Kdvli Tutar   :" +kdvliTutar);
-        System.out.println("Kdv Tutarý    :"+kdvTutar);
-        System.out.println("Kdv Oraný     :"+kdvOran);
+                System.out.println("Kdv'siz Tutar :"+tutar);
+                System.out.println("Kdvli Tutar   :" +kdvliTutar);
+                System.out.println("Kdv TutarÄ±    :"+kdvTutar);
+                System.out.println("Kdv OranÄ±     :"+kdvOran);
 
 	}
 

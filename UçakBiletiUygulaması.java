@@ -1,38 +1,38 @@
 import java.util.Scanner;
 
-public class UçakBiletiUygulaması {
+public class UÃ§akBiletiUygulamasÃ½ {
 
 	public static void main(String[] args) {
-		int yaş,mesafe,isReturn,tarif=1;
-		double indirimli_tutar, yaş_indirimi = 1,normal_tutar,gidiş_mesafesi = 1;
+	        int yaÃ¾,mesafe,isReturn,tarif=1;
+		double indirimli_tutar, yaÃ¾_indirimi = 1,normal_tutar,gidiÃ¾_mesafesi = 1;
 		Scanner input = new Scanner(System.in);
 		System.out.println("Mesafe giriniz: ");
 		mesafe = input.nextInt();
 		
-		System.out.println("Yaş giriniz: ");
-		yaş = input.nextInt();
+		System.out.println("YaÃ¾ giriniz: ");
+		yaÃ¾ = input.nextInt();
 		
-		System.out.println("Yolculuk Tipini Giriniz :\n1 - Tek-Yön\n2 - Gidiş-Dönüş");
-        isReturn = input.nextInt();
+		System.out.println("Yolculuk Tipini Giriniz :\n1 - Tek-YÃ¶n\n2 - GidiÃ¾-DÃ¶nÃ¼Ã¾");
+                isReturn = input.nextInt();
 
-        if (mesafe < 0 || yaş < 0 || isReturn < 0 || isReturn > 2) {
+        if (mesafe < 0 || yaÃ¾ < 0 || isReturn < 0 || isReturn > 2) {
             System.out.println("Please check the information that you provided.");
         }
         else
         {
-        	if (yaş < 12) {
-                yaş_indirimi = 0.5;
-            } else if (yaş >= 12 && yaş < 24) {
-                yaş_indirimi = 0.9;
-            } else if (yaş > 65) {
-                yaş_indirimi = 0.7;
+        	if (yaÃ¾ < 12) {
+                yaÃ¾_indirimi = 0.5;
+            } else if (yaÃ¾ >= 12 && yaÃ¾ < 24) {
+                yaÃ¾_indirimi = 0.9;
+            } else if (yaÃ¾ > 65) {
+                yaÃ¾_indirimi = 0.7;
             }
 
             if (isReturn == 2) {
-                gidiş_mesafesi = 1.6;
+                gidiÃ¾_mesafesi = 1.6;
             }
 
-            double sum = mesafe * tarif * yaş_indirimi * gidiş_mesafesi;
+            double sum = mesafe * tarif * yaÃ¾_indirimi * gidiÃ¾_mesafesi;
             System.out.print("Total Tutar: " + sum);
         }
 	}

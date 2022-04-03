@@ -35,8 +35,5 @@ public class UçakBiletiUygulamasý {
             double sum = mesafe * tarif * yaþ_indirimi * gidiþ_mesafesi;
             System.out.print("Total Tutar: " + sum);
         }
-	}
-
-	
-
+    }
 }

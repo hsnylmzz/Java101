@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class KombinasyonHesaplama {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-        System.out.println("C(n,r) kombinasyonu için;");
-        System.out.print("n sayısını girin: ");
+	Scanner input = new Scanner(System.in);
+        System.out.println("C(n,r) kombinasyonu iÃ§in;");
+        System.out.print("n sayÃ½sÃ½nÃ½ girin: ");
         int n= input.nextInt();
-        System.out.print("r sayısını girin: ");
+        System.out.print("r sayÃ½sÃ½nÃ½ girin: ");
         int r= input.nextInt();
         int toplamn=1,toplamr=1,toplamneksi=1;
         for(int i=1;i<=n;i++){

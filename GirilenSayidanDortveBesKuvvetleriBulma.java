@@ -7,12 +7,12 @@ public class GirilenSayidanDortveBesKuvvetleriBulma {
 		int girilen_sayi;
 		System.out.print("Bir sayi giriniz : ");
 		girilen_sayi = input.nextInt();
-		System.out.println("4'ün katlari ");
+		System.out.println("4'Ã¼n kuvvetleri ");
 		for(int i = 1; i<= girilen_sayi ; i*=4)
 		{
 			System.out.println(i);
 		}
-		System.out.println("5'in katlari ");
+		System.out.println("5'in kuvvetleri ");
 		for(int i = 1; i<= girilen_sayi ; i*=5)
 		{
 			System.out.println(i);

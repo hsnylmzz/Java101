@@ -1,42 +1,42 @@
 import java.util.Scanner;
 
-public class AtmİslemleriSwitchCase {
+public class AtmÄ°slemleriSwitchCase {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
+	Scanner input = new Scanner(System.in);
         String userName, password;
         int select;
         int balance = 1500, price;
         int right = 3;
 
         while (right > 0) {
-            System.out.print("Kullanıcı Adınız : ");
+            System.out.print("KullanÄ±cÄ± AdÄ±nÄ±z : ");
             userName = input.nextLine();
-            System.out.print("Parolanız : ");
+            System.out.print("ParolanÄ±z : ");
             password = input.nextLine();
 
 
             if (userName.equals("patika") && password.equals("dev123")) {
-                System.out.println("Merhaba, Kodluyoruz Bankasına Hoşgeldiniz!");
+                System.out.println("Merhaba, Kodluyoruz BankasÄ±na HoÅŸgeldiniz!");
                 do {
-                    System.out.println("1-Para Yatırma\n" +
-                            "2-Para Çekme\n" +
+                    System.out.println("1-Para YatÄ±rma\n" +
+                            "2-Para Ã‡ekme\n" +
                             "3-Bakiye Sorgulama\n" +
-                            "4-Çıkış Yap");
-                    System.out.print("Lütfen yapmak istediğiniz işlemi seçiniz : ");
+                            "4-Ã‡Ä±kÄ±ÅŸ Yap");
+                    System.out.print("LÃ¼tfen yapmak istediÄŸiniz iÅŸlemi seÃ§iniz : ");
 
                     select = input.nextInt();
 
                     switch (select) {
                         case 1:
-                            System.out.print("Para Miktarı : ");
+                            System.out.print("Para MiktarÄ± : ");
                             price = input.nextInt();
                             balance += price;
                             break;
 
                         case 2:
-                            System.out.println("Para Miktarı : ");
+                            System.out.println("Para MiktarÄ± : ");
                             price = input.nextInt();
                             if (price > balance) {
                                 System.out.println("Bakiye Yetersiz !");
@@ -52,16 +52,16 @@ public class AtmİslemleriSwitchCase {
                     }
 
                 } while (select != 4);
-                System.out.println("Tekrar Görüşmek Üzere . ");
+                System.out.println("Tekrar GÃ¶rÃ¼ÅŸmek Ãœzere . ");
                 break;
 
             } else {
                 right--;
-                System.out.println("Hatalı Kullanıcı Adı veya Şifre . Tekrar Deneyiniz.");
+                System.out.println("HatalÄ± KullanÄ±cÄ± AdÄ± veya Åifre . Tekrar Deneyiniz.");
                 if (right == 0) {
-                    System.out.println("Hesabınız Bloke olmuştur lüften banka ile iletişime geçiniz.");
+                    System.out.println("HesabÄ±nÄ±z Bloke olmuÅŸtur lÃ¼ften banka ile iletiÅŸime geÃ§iniz.");
                 } else {
-                    System.out.println("Kalan Hakkınız : " + right);
+                    System.out.println("Kalan HakkÄ±nÄ±z : " + right);
                 }
             }
         }

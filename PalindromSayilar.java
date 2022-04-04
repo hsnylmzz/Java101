@@ -22,8 +22,7 @@ public class PalindromSayilar {
 	}
 
 	public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-		
+                Scanner input=new Scanner(System.in);
 		int num=input.nextInt();
 		System.out.println(isPalindrom(num));
 

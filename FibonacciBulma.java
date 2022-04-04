@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class FibonacciBulma {
 
 	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);
-        System.out.print("Eleman sayýný giriniz: ");
+	Scanner input=new Scanner(System.in);
+        System.out.print("Eleman sayÃ½nÃ½ giriniz: ");
         int elemansayisi=input.nextInt();
         int sayi1=0;
         int sayi2=1;

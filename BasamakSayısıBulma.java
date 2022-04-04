@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class BasamakSayısıBulma {
+public class BasamakSayÄ±sÄ±Bulma {
 
 	public static void main(String[] args) {
 		int girilen_sayi,basamak_sayisi = 0,toplam = 0;
 		Scanner input = new Scanner(System.in);
-		System.out.print("Bir sayı giriniz : " );
+		System.out.print("Bir sayÄ± giriniz : " );
 		girilen_sayi = input.nextInt();
 		
 		while(girilen_sayi!=0)
 		{
-			int rakam = girilen_sayi % 10;
+		    int rakam = girilen_sayi % 10;
 		    toplam = rakam + toplam;
 		    girilen_sayi = girilen_sayi / 10;
 		}
-       System.out.print("Sayının Toplamı : " + toplam);
+            System.out.print("SayÄ±nÄ±n ToplamÄ± : " + toplam);
 	}
 
 }

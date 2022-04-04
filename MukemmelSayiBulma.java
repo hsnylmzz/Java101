@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class MukemmelSayiBulma {
 
 	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);
-        System.out.print("Sayý giriniz: ");
+	Scanner input=new Scanner(System.in);
+        System.out.print("SayÃ½ giriniz: ");
         int sayi=input.nextInt();
         int toplam=0;
         for (int i=1; i<sayi; i++){
@@ -13,9 +13,9 @@ public class MukemmelSayiBulma {
             }
         }
         if (toplam==sayi)
-            System.out.println("Girdiðiniz sayý mükemmel sayýdýr.");
+            System.out.println("GirdiÃ°iniz sayÃ½ mÃ¼kemmel sayÃ½dÃ½r.");
         else
-            System.out.println("Girdiðiniz sayý mükemmel sayý deðildir.");
+            System.out.println("GirdiÃ°iniz sayÃ½ mÃ¼kemmel sayÃ½ deÃ°ildir.");
 
 	}
 

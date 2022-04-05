@@ -18,10 +18,10 @@ public class AsalBulma {
 	}
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-
-
-        System.out.print("Sayiyi giriniz: ");
+	
+	Scanner input = new Scanner(System.in);
+        
+	System.out.print("Sayiyi giriniz: ");
         int kontrol = input.nextInt();
 
         if (asal(2, kontrol)==0){
@@ -30,6 +30,6 @@ public class AsalBulma {
             System.out.print(kontrol+" Asal degildir");
         }
 
-	}
+    }
 
 }

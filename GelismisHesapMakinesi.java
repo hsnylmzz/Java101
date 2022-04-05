@@ -9,25 +9,25 @@ public class GelismisHesapMakinesi {
 		int sayi,sonuc = 0,i = 1;
 		while(true)
 		{
-			System.out.print(i++ + ". sayý :");
-            sayi = input.nextInt();
-            if (sayi == 0) {
+		     System.out.print(i++ + ". sayÃ½ :");
+                     sayi = input.nextInt();
+             if (sayi == 0) {
                 break;
             }
             sonuc += sayi;
 		}
-		System.out.println("Sonuç : " + sonuc);
+		System.out.println("SonuÃ§ : " + sonuc);
 		
 	}
 	static void minus()
 	{
 		Scanner input = new Scanner(System.in);
-        System.out.print("Kaç adet sayý gireceksiniz :");
+        System.out.print("KaÃ§ adet sayÃ½ gireceksiniz :");
         int counter = input.nextInt();
         int sayi, sonuc = 0;
 
         for (int i = 1; i <= counter; i++) {
-            System.out.print(i + ". sayý :");
+            System.out.print(i + ". sayÃ½ :");
             sayi = input.nextInt();
             if (i == 1) {
                 sonuc += sayi;
@@ -36,7 +36,7 @@ public class GelismisHesapMakinesi {
             sonuc -= sayi;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
 	}
     static void times()
     {
@@ -44,7 +44,7 @@ public class GelismisHesapMakinesi {
         int sayi, sonuc = 1, i = 1;
 
         while (true) {
-            System.out.print(i++ + ". sayý :");
+            System.out.print(i++ + ". sayÃ½ :");
             sayi = input.nextInt();
 
             if (sayi == 1)
@@ -57,20 +57,20 @@ public class GelismisHesapMakinesi {
             sonuc *= sayi;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
     }
     static void divided()
     {
     	Scanner input = new Scanner(System.in);
-        System.out.print("Kaç adet sayý gireceksiniz :");
+        System.out.print("KaÃ§ adet sayÃ½ gireceksiniz :");
         int counter = input.nextInt();
         double sayi, sonuc = 0.0;
 
         for (int i = 1; i <= counter; i++) {
-            System.out.print(i + ". sayý :");
+            System.out.print(i + ". sayÃ½ :");
             sayi = input.nextDouble();
             if (i != 1 && sayi == 0) {
-                System.out.println("Böleni 0 giremezsiniz.");
+                System.out.println("BÃ¶leni 0 giremezsiniz.");
                 continue;
             }
             if (i == 1) {
@@ -80,15 +80,15 @@ public class GelismisHesapMakinesi {
             sonuc /= sayi;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
     }
     
     static void power()
     {
     	Scanner input = new Scanner(System.in);
-        System.out.print("Taban deðeri giriniz :");
+        System.out.print("Taban deÃ°eri giriniz :");
         int taban = input.nextInt();
-        System.out.print("Üs deðeri giriniz :");
+        System.out.print("Ãœs deÃ°eri giriniz :");
         int exponent = input.nextInt();
         int sonuc = 1;
 
@@ -96,13 +96,13 @@ public class GelismisHesapMakinesi {
             sonuc *= taban;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
     }
     
     static void factorial()
     {
     	Scanner input = new Scanner(System.in);
-        System.out.print("Sayý giriniz :");
+        System.out.print("SayÃ½ giriniz :");
         int n = input.nextInt();
         int sonuc = 1;
 
@@ -110,20 +110,20 @@ public class GelismisHesapMakinesi {
             sonuc *= i;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
     }
     static void modular()
     {
     	Scanner input = new Scanner(System.in);
-        System.out.print("Kaç adet sayý gireceksiniz :");
+        System.out.print("KaÃ§ adet sayÃ½ gireceksiniz :");
         int counter = input.nextInt();
         int sayi, sonuc = 0;
 
         for (int i = 1; i <= counter; i++) {
-            System.out.print(i + ". sayý : ");
+            System.out.print(i + ". sayÃ½ : ");
             sayi = input.nextInt();
             if (i != 1 && sayi == 0) {
-                System.out.println("Böleni 0 olduðundan sayýnýn modu yoktur");
+                System.out.println("BÃ¶leni 0 olduÃ°undan sayÃ½nÃ½n modu yoktur");
                 continue;
             }
             if (i == 1) {
@@ -133,37 +133,37 @@ public class GelismisHesapMakinesi {
             sonuc %= sayi;
         }
 
-        System.out.println("Sonuç : " + sonuc);
+        System.out.println("SonuÃ§ : " + sonuc);
     }
     static void RectangleAreaPerimater()
     {
     	Scanner input = new Scanner(System.in);
-    	System.out.print("Dikdörtgenin 1.Kenarý Yazýnýz : ");
+    	System.out.print("DikdÃ¶rtgenin 1.KenarÃ½ YazÃ½nÃ½z : ");
     	int width = input.nextInt();
-    	System.out.print("Dikdörtgenin 2.Kenarý Yazýnýz : ");
+    	System.out.print("DikdÃ¶rtgenin 2.KenarÃ½ YazÃ½nÃ½z : ");
     	int height = input.nextInt();
     	
     	int area = width * height;
     	int perimeter = 2 * (width + height);
-    	System.out.println("Dikdörtgenin Alaný : " + area);
-    	System.out.println("Dikdörtgenin Çevresi : " + perimeter);
+    	System.out.println("DikdÃ¶rtgenin AlanÃ½ : " + area);
+    	System.out.println("DikdÃ¶rtgenin Ã‡evresi : " + perimeter);
     }
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
         int select;
-        String menu = "1- Toplama Ýþlemi\n"
-                + "2- Çýkarma Ýþlemi\n"
-                + "3- Çarpma Ýþlemi\n"
-                + "4- Bölme iþlemi\n"
-                + "5- Üslü Sayý Hesaplama\n"
+        String menu = "1- Toplama ÃÃ¾lemi\n"
+                + "2- Ã‡Ã½karma ÃÃ¾lemi\n"
+                + "3- Ã‡arpma ÃÃ¾lemi\n"
+                + "4- BÃ¶lme iÃ¾lemi\n"
+                + "5- ÃœslÃ¼ SayÃ½ Hesaplama\n"
                 + "6- Faktoriyel Hesaplama\n"
                 + "7- Mod Alma\n"
-                + "8- Dikdörtgen Alan ve Çevre Hesabý\n"
-                + "0- Çýkýþ Yap";
+                + "8- DikdÃ¶rtgen Alan ve Ã‡evre HesabÃ½\n"
+                + "0- Ã‡Ã½kÃ½Ã¾ Yap";
 
         do {
             System.out.println(menu);
-            System.out.print("Lütfen bir iþlem seçiniz :");
+            System.out.print("LÃ¼tfen bir iÃ¾lem seÃ§iniz :");
             select = input.nextInt();
             switch (select) {
                 case 1:
@@ -193,7 +193,7 @@ public class GelismisHesapMakinesi {
                 case 0:
                     break;
                 default:
-                    System.out.println("Yanlýþ bir deðer girdiniz, tekrar deneyiniz.");
+                    System.out.println("YanlÃ½Ã¾ bir deÃ°er girdiniz, tekrar deneyiniz.");
             }
         } while (select != 0);
 

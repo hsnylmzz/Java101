@@ -50,7 +50,7 @@ public class Student {
     		this.c2.note = opNote2;
     	}
     	
-    	if(opNote2 >= 0 && opNote2 <= 100)
+    	if(opNote3 >= 0 && opNote3 <= 100)
     	{
     		this.c3.note = opNote3;
     	}

@@ -47,12 +47,12 @@ public class Student {
     	
     	if(opNote2 >= 0 && opNote2 <= 100)
     	{
-    		this.c1.note = opNote1;
+    		this.c2.note = opNote2;
     	}
     	
     	if(opNote2 >= 0 && opNote2 <= 100)
     	{
-    		this.c1.note = opNote1;
+    		this.c3.note = opNote3;
     	}
     }
     
@@ -61,19 +61,19 @@ public class Student {
     	System.out.println(this.c1.name + " Notu :\t" + this.c1.note);
     	System.out.println(this.c2.name + " Notu :\t" + this.c2.note);
     	System.out.println(this.c3.name + " Notu :\t" + this.c3.note);
-    	System.out.println("Ortalamanız : " + this.avarage);
+    	System.out.println("OrtalamanÃ½z : " + this.avarage);
     }
     void isPass()
     {
     	this.avarage = ((this.c1.note * 0.8 + this.c1.opNote * 0.2) + (this.c2.note * 0.8 + this.c2.opNote * 0.2) + (this.c3.note * 0.8 + this.c3.opNote * 0.2)) / 3.0;
     	if(this.avarage >= 45)
     	{
-    		System.out.println("Tebrikler.Geçtin");
+    		System.out.println("Tebrikler.GeÃ§tin");
     		this.isPass = true;
     	}
     	else 
     	{
-    		System.out.println("Üzgünüm.Kaldınız");
+    		System.out.println("ÃœzgÃ¼nÃ¼m.KaldÃ½nÃ½z");
     		this.isPass = false;
     	}
        printNote();

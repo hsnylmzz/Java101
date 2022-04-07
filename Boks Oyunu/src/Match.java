@@ -19,7 +19,7 @@ public class Match {
     	{
     		while(this.f1.health > 0 && this.f2.health > 0)
     		{
-    			System.out.println(" ==== YENİ ROUND ==== ");
+    			System.out.println(" ==== YENÃ ROUND ==== ");
     			this.f2.health = this.f1.hit(this.f2);
     			if(isWin())
     			{
@@ -34,7 +34,7 @@ public class Match {
     		}
     	}
     	else {
-    		System.out.println("Sporcuları Sikletleri Uymuyor");
+    		System.out.println("SporcularÃ½ Sikletleri Uymuyor");
     	}
     }
     
@@ -47,13 +47,13 @@ public class Match {
     {
     	if(this.f1.health == 0)
     	{
-    		System.out.println(f2.name + " kazandı.");
+    		System.out.println(f2.name + " kazandÃ½.");
     		return true;
     	}
     	
     	if(this.f2.health == 0)
     	{
-    		System.out.println(f1.name + " kazandı.");
+    		System.out.println(f1.name + " kazandÃ½.");
     		return true;
     	}
     	
@@ -62,7 +62,7 @@ public class Match {
     void printScore()
     {   
     	System.out.println("----------");
-    	System.out.println(this.f1.name + " Kalan Sağlık : " + this.f1.health);
-		System.out.println(this.f2.name + " Kalan Sağlık : " + this.f2.health);
+    	System.out.println(this.f1.name + " Kalan SaÃ°lÃ½k : " + this.f1.health);
+	System.out.println(this.f2.name + " Kalan SaÃ°lÃ½k : " + this.f2.health);
     }
 }

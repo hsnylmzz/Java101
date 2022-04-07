@@ -7,16 +7,16 @@ public class DizideSiralama {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Dizinin boyutunu yazýnýz : ");
+		System.out.print("Dizinin boyutunu yazÃ½nÃ½z : ");
 		int n = input.nextInt();
 		int [] dizi = new int[n];
 		
 		for(int i=0;i<dizi.length;i++)
 		{
-			System.out.print("Dizinin " + (i+1) + " .elemanlarýný yazýnýz : ");
+			System.out.print("Dizinin " + (i+1) + " .elemanlarÃ½nÃ½ yazÃ½nÃ½z : ");
 			dizi[i] = input.nextInt();
 		}
-        System.out.println("Dizinin Sýralanmýþ Hali ");
+                System.out.println("Dizinin SÃ½ralanmÃ½Ã¾ Hali ");
 		
 		Arrays.sort(dizi);
 		for(int i = 0; i<dizi.length;i++)

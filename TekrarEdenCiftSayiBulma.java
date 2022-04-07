@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class TekrarEdenCiftSayiBulma {
 	
-	static boolean isFind(int [] arr,int value)
+      static boolean isFind(int [] arr,int value)
 	{
 		for(int i:arr)
 		{
@@ -11,8 +11,8 @@ public class TekrarEdenCiftSayiBulma {
 		return false;
 	}
 
-	public static void main(String[] args) {
-		int [] list ={3,7,3,2,2,4,5,6,8,70,4,5,6,8,10,1,0};
+    public static void main(String[] args) {
+	int [] list ={3,7,3,2,2,4,5,6,8,70,4,5,6,8,10,1,0};
         int [] sonuc=new int[list.length];
         int startIndex=0;
         for (int i=0;i<list.length;i++){

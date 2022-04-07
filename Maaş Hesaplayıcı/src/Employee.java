@@ -29,7 +29,7 @@ public class Employee {
     	int sum,total = 0;
     	if(workHours > 40)
     	{
-    		for (int i = 41; i <= this.workHours; i++) {
+    		for (int i = 41; i <= workHours; i++) {
                 sum = i % 10;
                 total = sum;
             }

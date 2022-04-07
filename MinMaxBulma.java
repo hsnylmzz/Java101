@@ -3,36 +3,32 @@ import java.util.Scanner;
 public class MinMaxBulma {
 
 	public static void main(String[] args) {
-		 Scanner input = new Scanner(System.in);
-	        int n, num, max = 0, min = 0;
-
-	        System.out.println("Kaç adet sayý girmek istiyorsunuz? : ");
-	        n = input.nextInt();
-
-
-	        for (int i = 1; i <= n; i++) {
-	            do {
-	                System.out.println("Lütfen " + i + ".sayý giriniz : ");
-	                num = input.nextInt();
-	            }
-	            while (num < 0);
-
-
-	            if (num > max) {
-	                if (min == 0) {
-	                    min = num;
-	                }
-	                max = num;
-	            } else if (num < min) {
-
-	                min = num;
-	            }
-
-	        }
-
-	        System.out.println("Sayýnýn Minimum Deðeri : "+min);
-	        System.out.println("Sayýnýn Maksimum Deðeri : "+max);
-
+		Scanner input = new Scanner(System.in);
+		int sayi;
+		System.out.println("Bir sayi giriniz: ");
+		sayi = input.nextInt();
+		int dizi[]= {15,12,788,-1,1,-778,2,0};
+		int min = dizi[0];
+		int max = dizi[dizi.length - 1];
+		
+		for(int i=0;i<dizi.length;i++)
+		{
+			if(dizi[i] < sayi)
+			{
+				min = dizi[i];
+			}
+		}
+		
+		for(int i=0;i<dizi.length;i++)
+		{
+			if(dizi[i] > sayi)
+			{
+				max = dizi[i];
+			}
+		}
+       
+		System.out.println("Girilen Sayýdan Küçük En Yakýn Sayý : " + min);
+		System.out.println("Girilen Sayýdan Büyük En Yakýn Sayý : " + max);
 	}
 
 }
